@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# Done: 1. (3 pts)
 #
 #   In this module, we are going to create a program that will allow a user to
 #   give a review for a movie.
@@ -16,9 +16,13 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def movie():
+   return input("Please enter a movie title: ")
+    
+
 
 ###############################################################################
-# TODO: 2. (4 pts)
+# Done: 2. (4 pts)
 #
 #   Next, write a function called rating() that will prompt the user to enter a
 #   rating for the movie and return it as a float.
@@ -31,9 +35,12 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def rating():
+   return float(input("Please enter a movie rating (1-5): "))
+   
 
 ###############################################################################
-# TODO: 3. (3 pts)
+# Done: 3. (3 pts)
 #
 #   Now, write a function called review() that will prompt the user to enter a
 #   short review of the movie return the review text.
@@ -47,9 +54,11 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+def review():
+   return input("Please enter a brief review: ")
+   
 ###############################################################################
-# TODO: 4. (7 pts)
+# Done: 4. (7 pts)
 #
 #   Now, let's put it all together.
 #
@@ -73,3 +82,14 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def main():
+   
+   print("Please write your review below.")
+   title = movie()
+   movie_rating = rating()
+   movie_review = review()
+   print(f"Movie: {title}")
+   print(f"Rating: {movie_rating}")
+   print(f"Review: {movie_review}")
+   
+main()
